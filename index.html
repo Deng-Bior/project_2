@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            background-image: url(https://th.bing.com/th/id/OIP.eH7Mw0cL226oZa5Zeq2o0wHaFj?w=228&h=180&c=7&r=0&o=5&pid=1.7);
+        }
+    </style>
+    <main>
+        <div class="intro">
+            <img src="https://th.bing.com/th/id/OIP.7FxoqteZtUFc6NFuHJUyeQHaE8?w=285&h=190&c=7&r=0&o=5&pid=1.7" alt="cover photo">
+            <h1>The Best Basketball Quotes For Basketball Fans</h1>
+            <P>“No one knows how big your potential is, how big your heart is, when you start.” – Muggsy Bogues</P>
+            <P>“Remember that basketball is a game of habits. If you make the other guy deviate from his habits, you’ve got him” – Bill Russell</P>
+            <P>“You have to go through good times and bad times to get where you’re trying to go.” – Allen Iverson</P>
+            <P>“Excellence is a habit. You are what you repeatedly do.” – Shaquille O’Neal</P>
+            <P>“A winner is someone who recognizes his God-given talents, works his tail off to develop them into skills, and uses these skills to accomplish his goals.” — Larry Bird</P>
+            <P>“The key is not the ‘will to win’… everybody has that. It is the will to prepare to win that is important” – Bob Knight</P>
+            <P>“You are responsible for how people remember you—or don’t. So don’t take it lightly.” – Kobe Bryant</P>
+            <P>“Shooting percentage is just as much about decision making as it is about technique”– Jeff Van Gundy</P>
+            <P>“Whatever I try to do, I always try to give it my best and try to be a killer because, at the end of the day, if you don’t work hard, you are not going to get food on your table.” – Giannis Antetokoumbo</P>
+        </div>
+        <form onsubmit="return onSubmitHandler(event)">
+            <div class="input_field">
+                <label for="Fullname">Fullname</label>
+                <input type="text" 
+                       name="Fullname" 
+                       placeholder="Enter your Fullname"
+                       onchange="return fullNameChangeHandler(event)"
+                    />
+            </div>
+    
+            <div class="input_field">
+                <label for="Email">Email</label>
+                <input type="email" 
+                       name="Email" 
+                       placeholder="Enter your Email"
+                       onchange="return emailChangeHandler(event)"
+                    />
+            </div>
+    
+            <div class="input_field">
+                <label for="Phone number">Phone number</label>
+                <input type="number" 
+                       name="Phone number" 
+                       placeholder="Enter your Phone number"
+                       onchange="return phoneNumberChangeHandler(event)"/>
+            </div>
+    
+            <div class="input_field">
+                <label for="Date Of Birth">Date Of Birth</label>
+                <input type="date" 
+                       name="Date Of Birth" 
+                       placeholder="Enter your Date Of Birth"
+                       onchange="return dateOfBirthChangeHandler(event)"/>
+            </div>
+    
+            <div class="input_field">
+                <label for="Gender">Gender</label>
+                <select onchange="return genderChangeHandler(event)">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+
+            <br>
+            <button type="submit">
+                submit
+            </button>
+            <br>
+            <br>
+            <br>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,53 @@
+ body {
+    display: grid;
+    place-items: center;
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: black;
+ }
+
+ main {
+    width: 50%;
+    background-color: black;
+    padding: 10px;
+ }
+
+ .intro > img {
+    height: 50%;
+    width: 100%;
+ }
+
+ .input_field {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .input_field > input {
+    height: 3rem;
+    border: 1px solid #111;
+    border-radius: 10px;
+    background-color: orange;
+    color: black;
+ }
+
+ .input_field > select {
+   height: 3rem;
+   background-color: orange;
+   border: 1px solid #111;
+   border-radius: 10px;
+   color: black;
+ }
+
+ .input_field > label {
+   color: black;
+   font-size: 30px;
+ }
+
+ button {
+    border: none;
+    padding: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 8px;
+ }
